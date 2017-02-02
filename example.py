@@ -1,14 +1,19 @@
-from emailsend import sendmail
+from emailsend import sendMail
 
-mail_server = '' #smtp server
-mail_port = 0 #smtp server port
-sender = '' #sender email
-sender_password = '' #sender password
-to = '' #receiver email
-subject = '' #email subject
+serverURL = "" #SMTP server URL
+serverPort = 0 #SMTP server PORT
 
-text = "Hi!\nHow are you?\nHere is the link you wanted:\nhttps://www.python.org" #plan text message
-html = """\
+serverUser = "" #SMTP server username
+serverPass = "" #SMTP server password
+
+fromAddress = "" #sender email
+toAddress = "" #receiver email
+
+mSubject = "Python!" #message subject
+mAttachment = [] #message attachments
+
+mBody = "Hi!\nHow are you?\nHere is the link you wanted:\nhttps://www.python.org" #message plan text
+mBodyHTML = """\
 <html>
   <head></head>
   <body>
@@ -18,6 +23,6 @@ html = """\
     </p>
   </body>
 </html>
-""" #html message
+""" #message HTML text
 
-sendmail(sender, to, sender_password, mail_server, mail_port, subject, text, html,  None, True)
+sendmail(fromAddress, toAddress, mSubject, mBody, mBodyHTML, mAttachment, True, serverServer, serverPort, True, serverUser, serverPass)
