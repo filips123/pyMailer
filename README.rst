@@ -1,19 +1,21 @@
 With this module you can easy send emails.
 
-INSTALATION
-===========
-
-**Warning:**
+WARNING
+=======
 
 Due the error in deployment, the module was deleted.
 
 Please download module directly from `PyPI <https://pypi.org/project/emailsend/>`_ using PIP.
 Alternatively, you can install module `from .tar.gz file from PyPI <https://files.pythonhosted.org/packages/5c/a5/b653104cf78adb90c8a41b43f43eaea85134bc4d2f462d645c0ece81810f/emailsend-1.1.tar.gz>`_.
 
+INSTALATION
+===========
+
 Run 'py setup.py install' or 'python setup.py install'
 
 USAGE
 =====
+
 See example.py file.
 
 .. code:: python
